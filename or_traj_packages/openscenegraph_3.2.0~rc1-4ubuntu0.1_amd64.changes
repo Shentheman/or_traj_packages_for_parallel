@@ -1,0 +1,60 @@
+Format: 1.8
+Date: Wed, 06 Aug 2014 17:41:46 -0500
+Source: openscenegraph
+Binary: libopenthreads-dev libopenthreads14 libopenscenegraph-dev libopenscenegraph99 openscenegraph-doc openscenegraph openscenegraph-examples
+Architecture: source all amd64
+Version: 3.2.0~rc1-4ubuntu0.1
+Distribution: trusty
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Saikrishna Arcot <saiarcot895@gmail.com>
+Description: 
+ libopenscenegraph-dev - 3D scene graph, development files
+ libopenscenegraph99 - 3D scene graph, shared libs
+ libopenthreads-dev - Object-Oriented (OO) thread interface for C++, development files
+ libopenthreads14 - Object-Oriented (OO) thread interface for C++, shared libs
+ openscenegraph - 3D scene graph, utilities and examples (binaries)
+ openscenegraph-doc - 3D scene graph, documentation
+ openscenegraph-examples - 3D scene graph, examples (sources)
+Launchpad-Bugs-Fixed: 1284190 1339264
+Changes: 
+ openscenegraph (3.2.0~rc1-4ubuntu0.1) trusty; urgency=low
+ .
+   * Add support for building on armhf by building with OpenGL ES 2.0
+     (LP: #1284190).
+   * Backport part of a commit to not build osgframerenderer example.
+   * Add change-typedef.patch to fix conflicting typedefs for GLdouble
+     with OpenGL ES 2.0
+   * Exclude freeglut3-dev from dependencies for armhf
+   * Add patch to fix FreeType library detection (LP: #1339264).
+Checksums-Sha1: 
+ 404c0642dee6495b5df094e2f7ef5c7347f90648 2145 openscenegraph_3.2.0~rc1-4ubuntu0.1.dsc
+ d4ca0551ded188810e3c616211cfac229ae365a8 23194 openscenegraph_3.2.0~rc1-4ubuntu0.1.debian.tar.gz
+ e8879239819b182485402836769eb81079d5280e 6275052 openscenegraph-doc_3.2.0~rc1-4ubuntu0.1_all.deb
+ 6eac60316136ef7ca057dafa4354da91e6edf0d3 465542 openscenegraph-examples_3.2.0~rc1-4ubuntu0.1_all.deb
+ af40955b60f76f8179b1fa0e1f00cf36ed89618e 19196 libopenthreads-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ be61a85a107dca464317dd0ee3fb1505cf4c4b2a 19690 libopenthreads14_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 513a074f30b4b182f3a70d9345883736c79f3ad3 449904 libopenscenegraph-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ bd1fa08d7f702b0c849e342d778ed716dbba4c7a 5320360 libopenscenegraph99_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ b3d8e43746a3bf9c5c3bf8aa108a6c0e49a5cad3 1523330 openscenegraph_3.2.0~rc1-4ubuntu0.1_amd64.deb
+Checksums-Sha256: 
+ 672bd5db574bdc55317dde9398d960b1b80e0f3f0f63eb07badd6a98aaf4c6fc 2145 openscenegraph_3.2.0~rc1-4ubuntu0.1.dsc
+ c4e985c9899822d6e29998b94e7aff25f9dc964ce13cba55a4a30506a9558584 23194 openscenegraph_3.2.0~rc1-4ubuntu0.1.debian.tar.gz
+ 3a8720837b82058ebc0f6c1fc2cfa30e13b99cd6bd256e6e41de31f7a04063b1 6275052 openscenegraph-doc_3.2.0~rc1-4ubuntu0.1_all.deb
+ 82b3f25c4d8947b5892c65ca65c6edac7caed21153c3ace9b8df12acd91c481e 465542 openscenegraph-examples_3.2.0~rc1-4ubuntu0.1_all.deb
+ dd38fbe3065f7d2c87d41ce61edfc4f85e2bf7bce9cbd117c7bc50722eae3580 19196 libopenthreads-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ df5247849498340f5d48d5df3d8dc56bbed8a14a4e16a03df0a9c74019cc0690 19690 libopenthreads14_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 68227227b377dae6662174fe9e19975d44afff9eedba08dc31e70b4b01cd3b93 449904 libopenscenegraph-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 55f32d527ad46803279765a13bdf918ffc0fc77dfa5d2e24b242d5d56e3c17fc 5320360 libopenscenegraph99_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 30fcff614d605789e78217e5127bb183ee5e5c5916c41424da14b25f9892012c 1523330 openscenegraph_3.2.0~rc1-4ubuntu0.1_amd64.deb
+Files: 
+ 926fa3217daf6af8dc843633d7f34058 2145 devel optional openscenegraph_3.2.0~rc1-4ubuntu0.1.dsc
+ c842da74acb4629f95caedf44bbbd231 23194 devel optional openscenegraph_3.2.0~rc1-4ubuntu0.1.debian.tar.gz
+ 61e656ad5383931fb762706ac480fabf 6275052 doc optional openscenegraph-doc_3.2.0~rc1-4ubuntu0.1_all.deb
+ 75e4e85f7d310655db79519a16eb9bcd 465542 devel optional openscenegraph-examples_3.2.0~rc1-4ubuntu0.1_all.deb
+ 369e88916d882160c50bd24a6c8c921e 19196 libdevel optional libopenthreads-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ c7aa1123783245984538c4751462144e 19690 libs optional libopenthreads14_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ dc123efe269f2b11214633adf826deca 449904 libdevel optional libopenscenegraph-dev_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 0bf04db25c14dc237ef8eb8efa11323e 5320360 libs optional libopenscenegraph99_3.2.0~rc1-4ubuntu0.1_amd64.deb
+ 2d16d1d73c35ff16b5e80a29f9ea49f8 1523330 devel optional openscenegraph_3.2.0~rc1-4ubuntu0.1_amd64.deb
+Original-Maintainer: Loic Dachary (OuoU) <loic@debian.org>
